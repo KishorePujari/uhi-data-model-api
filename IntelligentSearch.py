@@ -83,9 +83,8 @@ def autocorrect_similarity(input_text):
 '''
 def authenticate(header):
     auth = header.get("X-Api-Key")
-    '''
-
-    '''
+    print("*********************")
+    print(auth)
     if auth == 'intelli-search-csh':
         return True
     else:

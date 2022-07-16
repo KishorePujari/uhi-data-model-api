@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "ae29d56a-684c-460b-a01c-56742e3a72f5",
+		"name": "NHA_Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://0.0.0.0:5000/autocorrect",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search_text\":\"cardilgist\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/autocorrect",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"autocorrect"
+					]
+				},
+				"description": "This is the API for Autocorrect"
+			},
+			"response": []
+		},
+		{
+			"name": "extractDisease",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"CHIEF COMPLAINT:Patient complains of diarrhea and fever since three days. The diarrhea is watery, no mucous or blood, frequency is 5-7 times a day. Fever is continuous and responds to antipyretics.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/extractDisease",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"extractDisease"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExtractMedication",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"Patient complains of diarrhea and fever since three days. The diarrhea is watery, no mucous or blood, frequency is 5-7 times a day. Fever is continuous and responds to antipyretics. There is loss of appetite. No stomach ache or cramps. No vomiting. No other symptoms.PHYSICAL EXAMINATION:Patient has mild fever, 99.8FSlight tenderness in lower abdomen, left side MEDICATION: Tinidazole , twice a day for 5 days Crocin 500 mg, three times a day for 3 days Plenty or oral fluids like water, fruit juice\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/extractmedication",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"extractmedication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extractEntities",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"Dr.Aiswarya  Columbia Hospital Pediatrist\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/extractEntities",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"extractEntities"
+					]
+				},
+				"description": "This is for converting semi-structured data to structured format"
+			},
+			"response": []
+		},
+		{
+			"name": "predictSymptom",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"symptom\":\"kn\"}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/predictSymptom",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"predictSymptom"
+					]
+				},
+				"description": "AutoSuggest Symptom for Challenge 3"
+			},
+			"response": []
+		}
+	]
+}

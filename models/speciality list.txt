@@ -1,0 +1,46 @@
+Allergy/ Immunology
+Gynecologist
+General Physician
+Orthopedician
+Dietitian
+Pediatrician
+Dermatologist
+Psychiatrist
+Andrologist
+Neurologist
+Urologist
+Gastroenterologist
+Radiology
+Nephrology
+Autopsy
+Bariatrics
+Cardiovascular / Pulmonary
+Chiropractic
+Consult History and Phy
+Cosmetic / Plastic Surgery
+Dentistry
+Diets and Nutritions
+ENT – Otolaryngology
+Endocrinology
+Hematology Oncology
+Hospice Palliative Care
+IME-QME-Work Comp
+Lab Medicine – Pathology
+Nephrology
+Neurology
+Neurosurgery
+Ophthalmology
+Pain Management
+Podiatry
+Psychiatry
+Rheumatology
+Sleep Medicine
+Speech Language
+Surgery
+SOAP / Chart Progress Notes
+Pediatrics – Neonatal
+Office Notes
+IME-QME-Work Comp
+Emergency Room Reports
+Consult History and Phy
+
